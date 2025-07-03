@@ -1,6 +1,6 @@
 export function formatDate(dateString: string): string {
   const date = new Date(dateString)
-  return date.toLocaleDateString('en-US', {
+  return date.toLocaleDateString('ja-JP', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -8,8 +8,8 @@ export function formatDate(dateString: string): string {
 }
 
 export function calculateReadTime(content: string): string {
-  const wordsPerMinute = 200
-  const words = content.trim().split(/\s+/).length
-  const minutes = Math.ceil(words / wordsPerMinute)
-  return `${minutes} min`
+  const charactersPerMinute = 400 // 日本語の場合は文字数で計算
+  const characters = content.trim().length
+  const minutes = Math.ceil(characters / charactersPerMinute)
+  return `${minutes}分で読めます`
 }

@@ -6,18 +6,18 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        titleTemplate="%s | AI Tools Hub"
-        defaultTitle="AI Tools Hub - Best AI Tools & Software Reviews"
-        description="Discover the best AI tools and software with our in-depth reviews, comparisons, and recommendations. Find the perfect AI solution for your needs."
+        titleTemplate="%s | AIツール比較ナビ"
+        defaultTitle="AIツール比較ナビ - 2024年最新AIツール徹底比較"
+        description="最新のAIツールを徹底比較。ChatGPT、Claude、画像生成AI、文章作成AIなど、あなたに最適なAIツールが見つかります。"
         openGraph={{
           type: 'website',
-          locale: 'en_US',
-          url: 'https://aitoolshub.com/',
-          site_name: 'AI Tools Hub',
+          locale: 'ja_JP',
+          url: 'https://blog-orcin-psi.vercel.app/',
+          site_name: 'AIツール比較ナビ',
         }}
         twitter={{
-          handle: '@aitoolshub',
-          site: '@aitoolshub',
+          handle: '@aitoolsnavi',
+          site: '@aitoolsnavi',
           cardType: 'summary_large_image',
         }}
       />

@@ -19,7 +19,7 @@ export default function BlogCard({ slug, title, excerpt, date, category, readTim
           <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-800 bg-blue-100 rounded-full">
             {category}
           </span>
-          <span className="text-sm text-gray-500">{readTime} read</span>
+          <span className="text-sm text-gray-500">{readTime}</span>
         </div>
         <h2 className={`mb-3 ${featured ? 'text-3xl' : 'text-xl'} font-bold text-gray-900 hover:text-blue-600`}>
           <Link href={`/posts/${slug}`}>
@@ -35,7 +35,7 @@ export default function BlogCard({ slug, title, excerpt, date, category, readTim
             href={`/posts/${slug}`}
             className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
           >
-            Read more
+            詳しく見る
             <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
