@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,7 +16,7 @@
     "@types/node": "^24.0.10",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.16",
     "gray-matter": "^4.0.3",
     "next": "^15.3.4",
     "next-seo": "^6.8.0",
